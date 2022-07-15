@@ -16,6 +16,7 @@ private UserMapper userMapper;
     @Test
     void contextLoads() {
         Page<User> page = new Page<>(1,3);
+        System.out.println("1");
        userMapper.selectPage(page,null);
         System.out.println(page);
     }
