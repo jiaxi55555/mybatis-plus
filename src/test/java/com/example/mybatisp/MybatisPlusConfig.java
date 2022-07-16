@@ -18,7 +18,7 @@ private UserMapper userMapper;
         Page<User> page = new Page<>(1,3);
         System.out.println("1");
         System.out.println("2");
-        System.out.println("master");
+        System.out.println("master finally");
        userMapper.selectPage(page,null);
         System.out.println(page);
     }
